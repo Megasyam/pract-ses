@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #000022;
+  font-family: inter;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  background-color: #e28413;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.logo {
+  width: 40px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.logo-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+.nav-right > a {
+  text-decoration: none;
+  color: #000022;
+  padding: 0px 8px;
+}
+
+.hero-inside {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding: 10px;
+}
+
+.hero-image {
+  width: 50%;
+}
+
+.hero-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  border-radius: 10px;
+  background-color: #e28413;
+  padding: 10px 20px;
+  border: none;
+  opacity: 0.9;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000022;
+  box-shadow: 2px 2px 5px #ccc;
+  transition: 0.5s;
+}
+
+.hero-btn:hover {
+  opacity: 1;
+}
+
+.review-heading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000022;
+  opacity: 0.9;
+}
+
+.review-card {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 240px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.review-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-author {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.review-desc {
+  margin: 5px;
+}
+
+.review-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .nav {
+    width: 100%;
+  }
+  .nav-right {
+    display: none;
+  }
+  .hero-title {
+    text-align: center;
+  }
+  .hero-image {
+    display: none;
+  }
+
+  .review-box {
+    flex-direction: column;
+  }
+}
